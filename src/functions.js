@@ -18,14 +18,14 @@ async function giveUserRedemptionPoints(username, points) {
         const apiUrlBase = process.env.STREAM_ELEMENTS_API_BASE
         const channelId = process.env.CHANNEL_ID
 
-        console.info(`Adding ${points} to ${username}!`);
+        console.info(`Adding ${points} points to ${username}!`);
         await axios.put(`${apiUrlBase}/${channelId}/${username}/${points}`).then(response => {
             if (response.status === 200) {
                 redemptions.push(username);
-                console.info(`Added ${points} to ${username}!`);
+                console.info(`Added ${points} points to ${username}!`);
             }
         }).catch(error => {
-            console.error(`An error ocurred when tried to add ${points} to ${username}!`);
+            console.error(`An error ocurred when tried to add ${points} points to ${username}!`);
         })
     }
 

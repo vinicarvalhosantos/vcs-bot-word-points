@@ -7,8 +7,8 @@ function messageReceived(target, context, message, ehBot) {
         return;
     }
 
-    const secretMessage = process.env.SECRET_MESSAGE;
-    const receivedMessage = message.trim();
+    const secretMessage = process.env.SECRET_MESSAGE.toLowerCase();
+    const receivedMessage = message.trim().toLowerCase();
     const username = context.username;
     const pointsToAdd = process.env.POINTS_TO_ADD;
 

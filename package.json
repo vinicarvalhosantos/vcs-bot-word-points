@@ -1,8 +1,8 @@
 {
-  "name": "vcs-bot-word-points",
+  "name": "bot-word-points",
   "version": "1.0.0",
   "description": "A simple bot to add streamelements points when user says some defined word!",
-  "main": "bot-word-points.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },

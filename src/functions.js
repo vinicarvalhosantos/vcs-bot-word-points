@@ -13,7 +13,7 @@ function checkIfUserAlreadyRedeemed(username) {
 
 async function giveUserRedemptionPoints(username, points) {
 
-    if (!checkIfUserAlreadyRedeem(username)) {
+    if (!checkIfUserAlreadyRedeemed(username)) {
 
         const apiUrlBase = process.env.STREAM_ELEMENTS_API_BASE
         const channelId = process.env.CHANNEL_ID

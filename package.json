@@ -1,13 +1,13 @@
 {
   "name": "vcs-bot-word-points",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple bot to add streamelements points when user says some defined word!",
   "main": "bot-word-points.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vinicius \"vcs\" Santos",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",

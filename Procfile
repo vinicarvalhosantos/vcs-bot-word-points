@@ -1,1 +1,1 @@
-worker: npm start FODASE
+worker: npm start

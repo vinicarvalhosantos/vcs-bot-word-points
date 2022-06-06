@@ -19,6 +19,4 @@ const client = tmi.client(configuration);
 
 client.on("message", onMessage);
 
-//client.on("connected")
-
 client.connect();

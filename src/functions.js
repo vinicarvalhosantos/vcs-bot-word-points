@@ -20,11 +20,13 @@ async function giveUserRedemptionPoints(username, points) {
 
         console.info(`Adding ${points} points to ${username}!`);
         await axios.put(`${apiUrlBase}/${channelId}/${username}/${points}`).then(response => {
+
             if (response.status === 200) {
+                
                 redemptions.push(username);
                 console.info(`Added ${points} points to ${username}!`);
             }
-        }).catch(error => {
+        }).catch(() => {
             console.error(`An error ocurred when tried to add ${points} points to ${username}!`);
         })
     }
